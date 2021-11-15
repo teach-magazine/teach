@@ -1,0 +1,90 @@
+@font-face{	
+	font-family: "Zen_Kaku_Gothic_Antique";
+	src: url("Zen_Kaku_Gothic_Antique/ZenKakuGothicAntique-Light.ttf");
+	}
+  
+html {
+  overflow-y: scroll;
+  -ms-overflow-style: scrollbar;
+}
+
+html,
+body {
+  font-family:"Zen_Kaku_Gothic_Antique";
+  height: 100%;
+  margin: 25px;;
+  padding: 0; 
+}
+
+body {
+  font-family:"Zen_Kaku_Gothic_Antique";
+  background: #DCDCDC;
+  font-size: 16px;
+  color: #767676;
+  margin:14px
+}
+
+#logo {
+height: 300px;
+width: 300px;
+}
+
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+#docu {
+	margin-right: 150px;
+	margin-left:150px;
+	text-align:justify;
+	color:black;
+	font-size: 16px;
+	background:white;
+}
+
+#about {
+	margin-right: 150px;
+	margin-left:150px;
+	text-align:justify;
+	color:black;
+	font-size: 18px;
+	background: #a3cd9c;
+}
+
+#team-info {
+	margin-right: 150px;
+	margin-left:150px;	
+}
+
+#intestazione {
+	margin-right: 150px;
+	margin-left:150px;
+	text-align:center;
+	color:black;
+	font-size: 14px;
+	background:#deedb4;
+}
+
+a:link { 
+color:black !important; 
+}
+
+.nav-link { 
+color:black !important; 
+}
+
+
+header {
+	background: #ffb6c1;
+}
+
+#MagTitle{
+	font-family:"Zen_Kaku_Gothic_Antique";
+	font-weight:bold; 
+	color:#000000;
+}
+
+	
