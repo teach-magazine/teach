@@ -1,0 +1,139 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style_generale.css">
+	</head>
+  
+ 	 <body>
+    <!--Header part, that has to be in all the pages: title of the mag + menu navbar -->
+    <header>
+    <h1 id="MagTitle">TE(A)CH</h1>
+
+    <!--Navbar component from Bootsrap-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home </a> <!--coverpage-->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="visualisation_interface.html">Article Visualisation</a> <!--the main interface with side by side visualisation of the articles-->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="documentation.html">Documentation</a>
+            </li>
+            
+            <li class="nav-item">
+              <!-- Button trigger modal -->
+				<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#disclaimer">
+				Disclaimer
+				</button>
+
+				<!-- Modal -->
+					<div class="modal fade" id="disclaimer" tabindex="-1" aria-labelledby="disclaimerLabel" aria-hidden="true">
+						<div class="modal-dialog">
+						<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="disclaimerLabel">Disclaimer</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<h2> Disclaimer</h2>
+																<p>The purpose of this web site is to explore various types of typographic and layout
+									style for text documents, as an end-of-course project for the "Information Modeling
+									and Web technologies" course of the Master Degree in Digital Humanities and
+									Digital Knowledge of the University of Bologna, under prof. Fabio Vitali.
+									The documents contained in this web site have been selected for their length and
+									complexity. Their publication here is not intended to be an alternative or
+									replace their original locations:
+									<ol>
+										<li>Issue Education</li>
+											<ul>
+												<li><a href="https://www.theguardian.com/education/2021/jan/23/after-covid-will-digital-learning-be-the-new-normal">Article 1 </a> </li>
+												<li><a href="https://www.newyorker.com/news/us-journal/running-a-virtual-school-on-chicagos-west-side"> Article 2</a></li>
+												<li><a href="https://doi.org/10.1080/1475939X.2020.1854337"> Article 3 </a> </li>
+											</ul>
+									</ol>
+									All copyrights and related rights on the content remain with their original owners.
+									All copyright on the typographic and layout choices are 2021 © Ginevra Ravazzini</p>
+						</div>
+						<div class="modal-footer">
+						</div>
+						</div>
+						</div>
+					</div>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+
+   <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+              <!--here Issue selector using a big Dropdown menu (Bootstrap again)-->
+              <div class="dropdown">
+  				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Issue
+  				</button>
+  				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    				<li><a class="dropdown-item" href="issue_education.html">Distance Learning</a></li>
+  				</ul>
+				</div>
+		<!-- bottoni style selector-->
+			<div id="style_selector" class="d-flex justify-content-center">
+				<button type="button" id="aldine" class="btn btn-outline-secondary" onclick="changeStyle('styles/1500/aldine.css')">Aldine</button>
+				<button type="button" id="cubism" class="btn btn-outline-success" onclick="changeStyle('styles/cubismo/cubismo.css')">Cubism</button>
+				<button type="button" id="reset" class="btn btn-outline-white" onclick="changeStyle('')">Reset</button>
+			</div>
+				
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<div id="space">
+</div>
+    <!--layout of the visualisation interface: Nesting grids from Bootstrap -->
+    <div class="container" >
+      <div class="row align-items-start">    
+
+            <!-- article columns: 1st column for an article -->
+            <div class="col-6 col-md-4">
+              <div class="p-3 border bg-light" >
+				<div> Please select issue to read the article</div>
+            </div>
+			</div>
+            <!-- article columns: 2nd column for an article -->
+            <div class="col-6 col-md-4">
+              <div class="p-3 border bg-light"> 
+                 <div> Please select issue to read the article</div>
+              </div>
+            </div>
+			<!-- article columns: 3rd column for an article -->
+            <div class="col-6 col-md-4">
+              <div class="p-3 border bg-light"> 
+                 <div> Please select issue to read the article</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!--end of the layout-->
+
+
+  </body>
+</html>
