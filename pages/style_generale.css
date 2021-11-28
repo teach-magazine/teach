@@ -26,7 +26,7 @@ body {
 
 #logo {
 height: 300px;
-width: 300px;
+width: 1000px;
 }
 
 img{
@@ -51,13 +51,19 @@ img{
 	text-align:justify;
 	color:black;
 	font-size: 18px;
-	background: #a3cd9c;
 }
 
 #team-info {
 	margin-right: 150px;
-	margin-left:150px;	
+	margin-left:150px;
+	font-size:14px;	
 }
+.card-header{
+font-size:18px;}
+.card{
+background:none;}
+.card-img-top{
+width:200px;}
 
 #intestazione {
 	margin-right: 150px;
@@ -65,7 +71,6 @@ img{
 	text-align:center;
 	color:black;
 	font-size: 14px;
-	background:#deedb4;
 }
 
 a:link { 
@@ -78,7 +83,6 @@ color:black !important;
 
 
 header {
-	background: #ffb6c1;
 }
 
 #MagTitle{
