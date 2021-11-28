@@ -88,6 +88,10 @@ color:black !important;
 
 header {
 }
+#logo_header{
+width:300px;
+height:auto;
+}
 
 #MagTitle{
 	font-family:"Zen_Kaku_Gothic_Antique";
