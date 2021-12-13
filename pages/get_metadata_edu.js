@@ -18,13 +18,13 @@
 				url: 'education_filelist.json',
 				success: function(d) {
 					for (var i=0; i<d.length; i++) {
-						$('#list_1').append(listItemTpl_a.tpl({url:d[i].url, label: d[i].label}))
+						$('#list_1').append(listItemTpl_1.tpl({url:d[i].url, label: d[i].label}))
 					}
 					for (var i=0; i<d.length; i++) {
-						$('#list_2').append(listItemTpl_b.tpl({url:d[i].url, label: d[i].label}))
+						$('#list_2').append(listItemTpl_2.tpl({url:d[i].url, label: d[i].label}))
 					}
 					for (var i=0; i<d.length; i++) {
-						$('#list_3').append(listItemTpl_c.tpl({url:d[i].url, label: d[i].label}))
+						$('#list_3').append(listItemTpl_3.tpl({url:d[i].url, label: d[i].label}))
 					}
 				},
 				error: function() {
