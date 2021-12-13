@@ -7,8 +7,8 @@
 		}
 		
 		var listItemTpl_1 = `<li><a class="dropdown-item" href='#' onclick='custom_load_1("$url")'>$label</a></li>`
-		var listItemTpl_b = `<li><a class="dropdown-item" href='#' onclick='custom_load_2("$url")'>$label</a></li>`
-		var listItemTpl_c = `<li><a class="dropdown-item" href='#' onclick='custom_load_3("$url")'>$label</a></li>`
+		var listItemTpl_2 = `<li><a class="dropdown-item" href='#' onclick='custom_load_2("$url")'>$label</a></li>`
+		var listItemTpl_3 = `<li><a class="dropdown-item" href='#' onclick='custom_load_3("$url")'>$label</a></li>`
 		
 		$(document).ready(main);
 
