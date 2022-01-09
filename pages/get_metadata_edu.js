@@ -68,7 +68,7 @@
 					$('#article_1').html(d)
 					$('#title').html($('#article_1 h1'))
 					$('.show').prop("checked", false)
-					filltabs_a()
+					filltabs_1()
 				},
 				error: function() {
 					alert('Could not load file '+file)
@@ -85,7 +85,7 @@
 					$('#article_2').html(d)
 					$('#title').html($('#article_2 h1'))
 					$('.show').prop("checked", false)
-					filltabs_b()
+					filltabs_2()
 				},
 				error: function() {
 					alert('Could not load file '+file)
@@ -102,7 +102,7 @@
 					$('#article_3').html(d)
 					$('#title').html($('#article_3 h1'))
 					$('.show').prop("checked", false)
-					filltabs_c()
+					filltabs_3()
 				},
 				error: function() {
 					alert('Could not load file '+file)
@@ -111,24 +111,24 @@
 		}
 		
 		function filltabs_1(){
-			filltab_a("#article_1 .mention-person","list-person","#person_1")
-			filltab_a("#article_1 .mention-place","list-place","#place_2")
-			filltab_a("#article_1 .mention-concept","list-concept","#concept_3")
-			filltab_a("#article_1 .mention-organisation","list-organisation","#organisation_1")
+			filltab_1("#article_1 .mention-person","list-person","#person_1")
+			filltab_1("#article_1 .mention-place","list-place","#place_2")
+			filltab_1("#article_1 .mention-concept","list-concept","#concept_3")
+			filltab_1("#article_1 .mention-organisation","list-organisation","#organisation_1")
 		}
 		
 		function filltabs_2(){
-			filltab_b("#article_2 .mention-person","list-person","#person_2")
-			filltab_b("#article_2 .mention-place","list-place","#place_2")
-			filltab_b("#article_2 .mention-concept","list-concept","#concept_2")
-			filltab_b("#article_2 .mention-organisation","list-organisation","#organisation_2")
+			filltab_2("#article_2 .mention-person","list-person","#person_2")
+			filltab_2("#article_2 .mention-place","list-place","#place_2")
+			filltab_2("#article_2 .mention-concept","list-concept","#concept_2")
+			filltab_2("#article_2 .mention-organisation","list-organisation","#organisation_2")
 		}
 			
 		function filltabs_3(){	
-			filltab_c("#article_3 .mention-person","list-person","#person_3")
-			filltab_c("#article_3 .mention-place","list-place","#place_3")
-			filltab_c("#article_3 .mention-concept","list-concept","#concept_3")
-			filltab_c("#article_3 .mention-organisation","list-organisation","#organisation_3")
+			filltab_3("#article_3 .mention-person","list-person","#person_3")
+			filltab_3("#article_3 .mention-place","list-place","#place_3")
+			filltab_3("#article_3 .mention-concept","list-concept","#concept_3")
+			filltab_3("#article_3 .mention-organisation","list-organisation","#organisation_3")
 		}
 		
 		
