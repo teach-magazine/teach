@@ -15,7 +15,7 @@
 		function main() {
 			$.ajax({
 				method: 'GET',
-				url: './education_filelist.json',
+				url: 'education_filelist.json',
 				success: function(d) {
 					for (var i=0; i<d.length; i++) {
 						$('#list_1').append(listItemTpl_1.tpl({url:d[i].url, label: d[i].label}))
