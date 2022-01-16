@@ -118,6 +118,13 @@ height:auto;
 	color:#000000;
 }
 
+#dropdownMenuButton,#dropdownMenuButton1 {
+	background-color:whitesmoke;
+	color:black;
+	border:black;
+	border-style: solid;
+}
+
 #footer {
 position: absolute;
 bottom: 0;
