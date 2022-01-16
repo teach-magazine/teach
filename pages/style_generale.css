@@ -18,9 +18,9 @@ body {
 
 body {
   font-family:"Zen_Kaku_Gothic_Antique";
-  background: #DCDCDC;
+  background: white;
   font-size: 16px;
-  color: #767676;
+  color: black;
   margin:14px
 }
 
@@ -34,6 +34,26 @@ img{
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
+}
+
+#person-tab_1, #person-tab_2, #person-tab_3{
+background-color: #fc914a;
+color: black;
+}
+
+#place-tab_1, #place-tab_2, #place-tab_3{
+background-color: #517f96;
+color: black;
+}
+
+#organisation-tab_1, #organisation-tab_2, #organisation-tab_3{
+background-color: #f2e94a;
+color: black;
+}
+
+#concept-tab_1, #concept-tab_2, #concept-tab_3{
+background-color: #ff5d8f;
+color: black;
 }
 
 #docu {
