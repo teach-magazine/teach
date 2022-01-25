@@ -92,7 +92,7 @@
 
 <div class="row" id="intestazione">
   <div class="col-md-12">
-    	<img id="logo" src="logo_home.jpg" style="margin-bottom: 40px;" alt="This is the logo of the magazine">
+    	<img id="logo-1" src="logo_home.jpg" style="margin-bottom: 40px;" alt="This is the logo of the magazine">
 	</div>
 </div>
 
@@ -106,7 +106,7 @@ The topic of the first issue is distance learning and the articles selected by t
 </div>
 
 <div class="col-md-12" id="foto_home">
-	<img id="logo" src="teach_3.jpg" style="margin-bottom: 40px;">
+	<img id="logo-2" src="teach_3.jpg" style="margin-bottom: 40px;">
 </div>
 
 <div class="row" id="about">
@@ -120,7 +120,7 @@ The articles can be read choosing two typographical styles: Aldine and Cubism. T
 
 <!---Team Info--->
 <div class="image">
-    <img src="teach_2.jpg" id="logo">
+    <img src="teach_2.jpg" id="logo-3">
 </div>
     <div class="text-center" style="margin-bottom: 60px;">
     	<h3>Issue 1: Distance Learning</h3>
@@ -146,5 +146,36 @@ The articles can be read choosing two typographical styles: Aldine and Cubism. T
 <footer class="mt-5">
 	<p class="text-center" id="footer">Copyright © 2022 Ginevra Ravazzini</p>
 </footer>
+
+	<script>
+
+		function resizeImages() { 
+
+			// Logo
+			for (let i=1; i<=3; i++){
+				let winWidth = document.documentElement.clientWidth;
+
+				let imLogo = document.getElementById('logo-' + i);
+				let logoWidth = winWidth/100*50;
+				imLogo.style.width = logoWidth+'px';
+				imLogo.style.height = logoWidth/10*3+'px';
+			}
+
+			let winWidth = document.documentElement.clientWidth;
+
+			// Logo header
+			let imLogoH = document.getElementById('logo_header');
+			let logoWidth = winWidth/100*15;
+			imLogoH.style.width = logoWidth+'px';
+			imLogoH.style.height = 'auto';
+
+			
+			
+		}
+
+		window.addEventListener('DOMContentLoaded', resizeImages);
+		window.addEventListener('resize', resizeImages);
+	</script>
+
 </body>
 </html>
