@@ -65,8 +65,8 @@ color: black;
 }
 
 #about {
-	margin-right: 150px;
-	margin-left:150px;
+	margin-right: 20px;
+	margin-left:20px;
 	text-align:justify;
 	color:black;
 	font-size: 22px;
@@ -134,5 +134,25 @@ height:auto;
     float: none; /* Added */
     margin-bottom: 10px; /* Added */
 }
+/*nuova parte*/
 
+.col-md-12 {
+  padding: 0 20px;
+}	
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .col-md-12 {
+    width: 80%;
+    padding: 0;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .col-md-12 {
+    width: 100%;
+    padding: 0;
+    font-size: 15px;
+  }
+}
 	
